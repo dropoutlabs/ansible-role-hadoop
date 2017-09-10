@@ -12,8 +12,6 @@
   register: out
   when: not md5sum.stdout  
 
-- debug: var=out.stdout_lines
-
 - template:
     src: ./hadoop-2.8.1.tar.gz.md5.j2
     dest: /tmp/hadoop-2.8.1.tar.gz.md5
